@@ -1,0 +1,54 @@
+site_name: txt2epub-pdfの使用方法
+site_dir: ../docs/html
+site_author: Yamahara Yoshihiro
+site_description: txt2epub-pdfの使用
+copyright: © 2021 Yamahara Yoshihiro
+repo_url: https://github.com/drthomas246/txt2epub-pdf
+repo_name: drthomas246/txt2epub-pdf
+edit_uri: ""
+
+theme:
+  name: material
+  language: ja
+  font:
+    text: M PLUS Rounded 1c
+    code: Source Code Pro
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+extra:
+  search:
+    language: 
+      - ja
+      - en
+  social:
+    - icon: fontawesome/brands/chrome
+      link: https://www.hobofoto.work
+      name: HoBoFoTo.Work
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
+  - javascripts/config.js
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: pymdownx-inline
+  - pymdownx.superfences

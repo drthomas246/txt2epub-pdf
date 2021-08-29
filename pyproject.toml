@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "txt2epub-pdf"
+version = "0.1.0"
+description = "This pakage is changed epub or pdf from text."
+authors = ["Yamahara Yoshihiro <yoshihiro@yamahara.email>"]
+maintainers = ["Yamahara Yoshihiro <yoshihiro@yamahara.email>"]
+repository = "https://github.com/drthomas246/txt2epub-pdf"
+homepage = "https://www.hobofoto.work"
+readme = "README.md"
+license = "MIT"
+keywords = ["Text", "Epub", "PDF"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Natural Language :: Japanese",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+Pillow = "^8.0.0"
+pykakasi = "^2.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+pytest-flake8 = "^1.0.7"
+mkdocs = "^1.2.2"
+mkdocs-material = "^7.2.5"
+
+[tool.poetry.scripts]
+txt2epub = "txt2epub_pdf.console:epub"
+txt2pdf = "txt2epub_pdf.console:pdf"
+
+[tool.pytest.ini_options]
+flake8-ignore = ["E501"]
+addopts = "--flake8 --cov=txt2epub_pdf --cov-report html:docs/html/htmlcov"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
