@@ -39,7 +39,7 @@ txt2pdf = "txt2epub_pdf.console:pdf"
 
 [tool.pytest.ini_options]
 flake8-ignore = ["E501"]
-addopts = "--flake8 --cov=txt2epub_pdf --cov-report html:docs/html/htmlcov"
+addopts = "--flake8 --cov=txt2epub_pdf --cov-report html:docs/htmlcov"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

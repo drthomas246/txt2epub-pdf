@@ -19,7 +19,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 ## クラスメソッド
 こんにちは！こんばんわ！
 
-- [htmlcov](/htmlcov/)
+- [htmlcov](/txt2epub-pdf/htmlcov/)
 
 私は天才です。[^1]
  
